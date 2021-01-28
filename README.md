@@ -1,3 +1,10 @@
+# OICR note
+This fork contains map files with OICR compatible headers:
+
+* [oicr_hg19_chr.map](map_files/oicr_hg19_chr.map)
+* [oicr_hg38_chr.map](map_files/oicr_hg38_chr.map)
+
+The map files were created with [oicr_create_map_files.sh](oicr_create_map_files.sh)
 
 # build_fingerprint_maps 
 `build_fingerprint_maps` is a tool for building haplotype maps for use with Picardtools fingerprinting software. A haplotype map is a collection of "blocks" of SNPs which are in tight linkage with SNPs of the same block and low linkage with SNPs of different blocks.
