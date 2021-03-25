@@ -6,6 +6,11 @@ This fork contains map files with OICR compatible headers:
 
 The map files were created with [oicr_create_map_files.sh](oicr_create_map_files.sh)
 
+Smaller map files, which allow for faster running of crosscheckFingerprints, are described in the comments of a [Broad blog post](https://gatk.broadinstitute.org/hc/en-us/articles/360041696232-Detecting-sample-swaps-with-Picard-tools) and were downloaded from the [Broad Google Cloud](https://console.cloud.google.com/storage/browser/gcp-public-data--broad-references) website:
+
+* [oicr_hg19_v0_Homo_sapiens_assembly19.with_assay_info.haplotype_database.txt](map_files/oicr_hg19_v0_Homo_sapiens_assembly19.with_assay_info.haplotype_database.txt)
+* [oicr_hg38_v0_Homo_sapiens_assembly38.with_assay_info.haplotype_database.txt](map_files/oicr_hg38_v0_Homo_sapiens_assembly38.with_assay_info.haplotype_database.txt)
+
 # build_fingerprint_maps 
 `build_fingerprint_maps` is a tool for building haplotype maps for use with Picardtools fingerprinting software. A haplotype map is a collection of "blocks" of SNPs which are in tight linkage with SNPs of the same block and low linkage with SNPs of different blocks.
 
